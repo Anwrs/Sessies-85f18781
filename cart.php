@@ -26,12 +26,9 @@ session_start();
 </html>
 
 <?php
-if(($_GET["number"] > 0) && ($_GET["number"] < 4)){
-    if(isset($_GET["number"])){
+if(($_GET["number"] > 0) && ($_GET["number"] < 4)) {
+    if(isset($_GET["number"])) {
         $_SESSION["keuze"] = $_GET["keuze"];
-    }
-    
-    if(isset($_COOKIE["keuze"])){
         echo "Gekozen item: " . $_SESSION["keuze"];                                                         
     }
 }
